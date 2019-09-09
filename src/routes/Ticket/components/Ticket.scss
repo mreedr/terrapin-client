@@ -1,0 +1,144 @@
+.close {
+  height: 25px;
+}
+
+.barcode-container {
+  padding: 15px;
+}
+
+.card-action {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  color: #737373;
+}
+
+.share-icon {
+  cursor: pointer;
+}
+
+.venue-information {
+  border-top: 1px solid hsla(0,0%,63%,.2);
+  padding: 24px;
+}
+
+.alert {
+  padding: 24px;
+
+  small {
+    font-size: .7rem;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  .action-button {
+    padding: 0px 25px;
+  }
+  :last-child {
+    padding-right: 0px;
+  }
+}
+
+.checkout-information {
+  border-top: 1px solid hsla(0,0%,63%,.2);
+}
+
+.card-action-ticket {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid hsla(0,0%,63%,.2);
+  padding: 16px 24px;
+
+  a {
+    margin-right: 0 !important;
+    color: #ffab40;
+  }
+
+}
+
+.ReactModalPortal > * {
+    // When the modal is closed, overlay div has no css class
+    // This selector should be overridden by the `&--after-open` class below
+    opacity: 0;
+}
+.ReactModal__Overlay {
+  z-index: 99;
+  transition: opacity 200ms ease-in-out;
+  background: rgba(0, 0, 0, 0.15);
+  &--after-open {
+      opacity: 1;
+  }
+  &--before-close {
+      opacity: 0;
+  }
+}
+
+.ReactModal__Content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+}
+
+.ribbon {
+  position: absolute;
+  left: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 150px; height: 150px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-36deg);
+  width: 120px;
+  display: block;
+  background: #79a70a;
+  background: linear-gradient(#c63,#c63);
+  box-shadow: 0 3px 10px -5px #000;
+  position: absolute;
+  top: 18.5px;
+  left: -17px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #CC4B4B;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #CC4B4B;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #CC4B4B;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #CC4B4B;
+}
+
+.ticket-card-image {
+  display: block;
+  max-width: 600px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

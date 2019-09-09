@@ -1,0 +1,44 @@
+@import 'base';
+@import 'sass/materialize';
+
+
+// @import '~bootstrap/scss/bootstrap.scss';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  // font-family: 'Montserrat',sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+small.caption {
+  color: #757575;
+}
+
+small.super-small {
+  font-size: 60%;
+  color: #757575;
+}
+
+thead {
+  background: #e1e2e1;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
